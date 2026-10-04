@@ -78,8 +78,8 @@ export interface SecretMetaResponse {
   burnAfterRead: boolean;
   isBurned: boolean;
   isExpired: boolean;
+  hasPassphrase?: boolean;
 }
-
 export interface RateLimitResult {
   success: boolean;
   limit: number;

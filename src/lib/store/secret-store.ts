@@ -206,6 +206,7 @@ export class MemorySecretStore implements ISecretStore {
       burnAfterRead: record.burnAfterRead,
       isBurned: record.isBurned,
       isExpired: false,
+      hasPassphrase: Boolean(record.salt),
     };
   }
 
